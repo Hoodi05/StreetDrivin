@@ -1,0 +1,226 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Fonts/SpeedFreaks-r1yK.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/Shop.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+extra_spacing_char = 1
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+extra_spacing_char = 2
+
+[sub_resource type="DynamicFont" id=4]
+size = 25
+extra_spacing_char = 1
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 42
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 40
+extra_spacing_char = 2
+
+[node name="Shop" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ShopInfo" type="RichTextLabel" parent="."]
+margin_top = 48.4543
+margin_right = 424.0
+margin_bottom = 80.4543
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.231373, 0.231373, 0.231373, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Your Coins: "
+text = "Your Coins: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="RichTextLabel" parent="."]
+light_mask = 2
+margin_top = 736.0
+margin_right = 424.0
+margin_bottom = 800.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.231373, 0.231373, 0.231373, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Back"
+meta_underlined = false
+text = "Back"
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="LinkButton" parent="Back"]
+margin_right = 424.0
+margin_bottom = 64.0
+focus_mode = 2
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+shortcut_in_tooltip = false
+action_mode = 0
+underline = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Skins" type="RichTextLabel" parent="."]
+light_mask = 2
+margin_top = 608.0
+margin_right = 424.0
+margin_bottom = 672.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.231373, 0.231373, 0.231373, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Skins"
+meta_underlined = false
+text = "Skins"
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Skins" type="LinkButton" parent="Skins"]
+margin_right = 424.0
+margin_bottom = 64.0
+focus_mode = 2
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+shortcut_in_tooltip = false
+action_mode = 0
+underline = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AccelerationPrice" type="RichTextLabel" parent="."]
+margin_top = 240.0
+margin_right = 424.0
+margin_bottom = 272.0
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 0.231373, 0.231373, 0.231373, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]ADD [100$]"
+text = "ADD [100$]"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AccelerationInfo" type="RichTextLabel" parent="."]
+margin_top = 208.0
+margin_right = 424.0
+margin_bottom = 240.0
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 0.231373, 0.231373, 0.231373, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Your: 50"
+text = "Your: 50"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Acceleration" type="RichTextLabel" parent="."]
+light_mask = 2
+margin_top = 160.0
+margin_right = 424.0
+margin_bottom = 240.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.231373, 0.231373, 0.231373, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Acceleration"
+meta_underlined = false
+text = "Acceleration"
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="AccelerationAdd" type="LinkButton" parent="Acceleration"]
+margin_right = 424.0
+margin_bottom = 112.0
+focus_mode = 2
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+shortcut_in_tooltip = false
+action_mode = 0
+underline = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MaxSpeedPrice" type="RichTextLabel" parent="."]
+margin_top = 400.0
+margin_right = 424.0
+margin_bottom = 432.0
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 0.231373, 0.231373, 0.231373, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]ADD [100$]"
+text = "ADD [100$]"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MaxSpeedInfo" type="RichTextLabel" parent="."]
+margin_top = 368.0
+margin_right = 424.0
+margin_bottom = 400.0
+custom_fonts/normal_font = SubResource( 4 )
+custom_colors/default_color = Color( 0.231373, 0.231373, 0.231373, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]Your: 50"
+text = "Your: 50"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MaxSpeed" type="RichTextLabel" parent="."]
+light_mask = 2
+margin_top = 320.0
+margin_right = 424.0
+margin_bottom = 400.0
+custom_fonts/normal_font = SubResource( 5 )
+custom_colors/default_color = Color( 0.231373, 0.231373, 0.231373, 1 )
+bbcode_enabled = true
+bbcode_text = "[center]MaxSpeed"
+meta_underlined = false
+text = "MaxSpeed"
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="MaxSpeedAdd" type="LinkButton" parent="MaxSpeed"]
+margin_right = 424.0
+margin_bottom = 112.0
+focus_mode = 2
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+shortcut_in_tooltip = false
+action_mode = 0
+underline = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Back/Back" to="." method="_on_Back_pressed"]
+[connection signal="pressed" from="Skins/Skins" to="." method="_on_Skins_pressed"]
+[connection signal="pressed" from="Acceleration/AccelerationAdd" to="." method="_on_AccelerationAdd_pressed"]
+[connection signal="pressed" from="MaxSpeed/MaxSpeedAdd" to="." method="_on_MaxSpeedAdd_pressed"]
